@@ -12,7 +12,6 @@ CONFIG = YAML.load_file(File.dirname(__FILE__)+"/ambientes/teste.yml")
 World(Helper)
 
 Capybara.configure do |config|
-    #config.default_driver = :selenium_chrome
     config.default_driver = :selenium
     config.app_host = CONFIG['url_padrao']
     config.default_max_wait_time = 10
